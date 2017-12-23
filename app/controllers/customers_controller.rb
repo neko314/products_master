@@ -1,4 +1,4 @@
-class CustomersController < ActionController::Base
+class CustomersController < ApplicationController
   def new
   end
 

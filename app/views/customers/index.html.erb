@@ -1,7 +1,7 @@
-<% provide(:title, "Customers")%>
-<!DOCTYPE html>
+<% render "/customers/title" %>
+
 <body>
   <h1>顧客管理</h1>
   <%= link_to "新規登録", "/customers/new" %>
-  <%= link_to "製品管理へ", "/" %>
+  <%= link_to "製品管理へ", "/products/index" %>
 </body>

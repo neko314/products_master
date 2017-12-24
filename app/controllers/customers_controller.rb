@@ -6,9 +6,9 @@ class CustomersController < ApplicationController
   def create
     @customer = Customer.new(customer_params)
     if @customer.save
-      render '/customers/index'
+      render '/index'
     else
-      render '/customers/new'
+      render '/new'
     end
   end
 

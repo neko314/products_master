@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   post '/customers' => 'customers#create'
 
   get '/products/index' => 'products#index'
-  get "/products/new" => 'products#new'
+  get '/products/new' => 'products#new'
+  post '/products' => 'products#create'
 end

@@ -2,5 +2,26 @@
 
 <body>
   <h1>製品管理</h1>
-  
+
+  <h1>顧客管理</h1>
+  <%= form_for(@product) do |f| %>
+
+  <%= f.label :code %>
+  <%= f.text_field :code %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :material %>
+  <%= collection_select(:product, :code, Material.all, :code, :name) %>
+
+  <%= f.label :usage %>
+  <%= collection_select(:product, :code, Usage.all, :code, :name) %>
+
+  <%= f.label :customer %>
+  <%= collection_select(:product, :code, Customer.all, :code, :name) %>
+
+  <%= f.submit "Save" %>
+
+  <%end%>
 </body>

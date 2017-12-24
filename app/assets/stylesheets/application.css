@@ -1,3 +1,30 @@
+html {
+  font-family: 'Gurmukhi MN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',
+  sans-serif;
+}
+
 ul {
   list-style: none;
+  font-size: 30px;
+}
+
+
+
+header {
+  font-family: 'Chalkboard SE';
+  margin-bottom: 50px;
+  background-color: #DDFFFF;
+  height: 100px;
+}
+
+main{
+  padding-left: 200px;
+  font-size: 25px;
+}
+
+footer{
+  margin-top: 50px;
+  background-color: #DDFFFF;
+  height: 100px;
+  text-align: center;
 }

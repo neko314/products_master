@@ -4,11 +4,11 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Customer.new(product_params)
+    @product = Product.new(product_params)
     if @product.save
-      render '/index'
+      render 'products/index'
     else
-      render '/new'
+      render 'products/new'
     end
   end
 
@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
   def destroy
   end
 
-  def oriduct_params
+  def product_params
     params.require(:product).permit(:code, :name, :material, :usage, :customer)
   end
 

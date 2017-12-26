@@ -1,3 +1,3 @@
 class Usage < ApplicationRecord
-  has_many: products
+  has_many :products
 end

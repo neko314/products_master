@@ -10,8 +10,8 @@ Material.create([
 ])
 
 Usage.create([
-  { code:"A1", name:"groceries"},
-  { code:"A2", name:"sweets"},
-  { code:"B1", name:"architecture"},
-  { code:"B2", name:"manufacturing"}
+  { code:"A1", name:"食品"},
+  { code:"A2", name:"菓子"},
+  { code:"B1", name:"建築"},
+  { code:"B2", name:"製造"}
 ])

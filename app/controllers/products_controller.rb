@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+
     if @product.save
       render 'index'
     else
@@ -25,7 +26,7 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:code, :name, :material, :usage, :customer)
+    params.require(:product).permit(:code, :name, :material_id, :usage_id, :customer_id)
   end
 
 end

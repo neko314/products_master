@@ -2,7 +2,7 @@
 
 <body>
   <h1>製品管理</h1>
-  
+
   <%= form_for(@product) do |f| %>
 
   <%= f.label :code %>
@@ -12,13 +12,13 @@
   <%= f.text_field :name %>
 
   <%= f.label :material %>
-  <%= collection_select(:product, :code, Material.all, :code, :name) %>
+  <%= collection_select(:product, :material_id, Material.all, :id, :name) %>
 
   <%= f.label :usage %>
-  <%= collection_select(:product, :code, Usage.all, :code, :name) %>
+  <%= collection_select(:product, :usage_id, Usage.all, :id, :name) %>
 
   <%= f.label :customer %>
-  <%= collection_select(:product, :code, Customer.all, :code, :name) %>
+  <%= collection_select(:product, :customer_id, Customer.all, :id, :name) %>
 
   <%= f.submit "Save" %>
 
